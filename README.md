@@ -1,14 +1,14 @@
-# Hard Classes Mining Method Based on Centers Bias Estimation in Face Recognition
+# Hard Class Mining Method Based on Center Bias Estimation in Face Recognition
 
-Official github repository for CentersBiasFace. 
+Official github repository for CenterBiasFace. 
 
-> Abstract: The design of loss function is crucial in face recognition. A common practice is to add a fixed margin term to all classes to modify the decision boundary between classes, compress the distance between features within a class, and improve the ability of the model to separate features of different classes. However, adding the same margin term for all classes may ignore the inconsistency between classes in the face recognition dataset. In order to further improve the effect of the model, we believe that the model should pay different attention to the samples of different classes according to the learning difficulty of the class. In this paper, we devise a method to mine hard classes based on the bias between the center of the class mean and the center of the class weight, which we call center bias estimation. In this paper, the model reassigns margin  terms of different sizes to different classes according to the value of central bias estimation. At the same time, in order to solve the problem of unstable calculation of centers bias estimation in the early stage of training, we propose a dynamically changing convergence parameter to adjust the credibility of centers bias estimation. And carry out relevant experiments to prove the effectiveness of the convergence parameters. Experimental results on multiple face verification benchmark datasets and a large face verification test dataset show that the proposed centers bias estimation method outperforms general existing baseline algorithms.
+> Abstract: The design of loss function is crucial in face recognition. A common practice is to add a fixed margin term to all classes to modify the decision boundary between classes, compress the distance between intra-class features, and improve the ability of the model to separate features of different classes. However, adding the same margin term for all classes may ignore the inconsistency between classes in the face recognition dataset. In order to further improve the effect of the model, we argue that the model should pay different attention to the samples of different classes according to the learning difficulty of the class. In this paper, we introduce a method to mine hard classes based on the bias between the center of the class mean and the center of the class weight, which is called centers bias estimation. The model reassigns margin  terms of different sizes to different classes according to the value of centers bias estimation. At the same time, in order to solve the problem of unstable calculation of centers bias estimation in at the early stage of training, we propose a adaptively changing convergence parameter to adjust the credibility of centers bias estimation, and design relevant experiments to prove the effectiveness of the convergence parameters. Experimental results on multiple face verification benchmark datasets and a large face verification test dataset show that the proposed centers bias estimation method outperforms general existing baseline algorithms.
 
-## Installtion 
+## Installation
 
 ```bash
-conda create -n centers_bias python=3.8
-conda activate centers_bias
+conda create -n center_bias python=3.8
+conda activate center_bias
 pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 pip install -r requirements.txt
 ```
