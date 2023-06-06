@@ -1,4 +1,4 @@
-# Hard Class Mining Method Based on Center Bias Estimation in Face Recognition
+# Face Recognition Based on Center Bias Estimation and Adaptive Margin
 
 Official github repository for CenterBiasFace. 
 
